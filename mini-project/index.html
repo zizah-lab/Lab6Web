@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Workshop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="kartu">
+    <h1>Pendaftaran Workshop Web</h1>
+    <p class="sub">Isi data di bawah untuk mengamankan kursi kamu.</p>
+
+    <form id="formWorkshop" novalidate>
+      <div class="grup">
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text" maxlength="40" placeholder="Contoh: Azizah Rachmatania">
+        <small class="hitung">Jumlah karakter: <span id="jumlahNama">0</span>/40</small>
+        <small class="pesan-error" id="errNama"></small>
+      </div>
+
+      <div class="grup">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="nama@email.com">
+        <small class="pesan-error" id="errEmail"></small>
+      </div>
+
+      <div class="grup">
+        <label for="sesi">Pilih sesi</label>
+        <select id="sesi" name="sesi">
+          <option value="">-- Pilih sesi --</option>
+          <option value="Sesi 1 - HTML &amp; CSS Dasar">Sesi 1 - HTML &amp; CSS Dasar</option>
+          <option value="Sesi 2 - JavaScript DOM">Sesi 2 - JavaScript DOM</option>
+          <option value="Sesi 3 - Web Responsif">Sesi 3 - Web Responsif</option>
+        </select>
+        <small class="info" id="infoSesi"></small>
+        <small class="pesan-error" id="errSesi"></small>
+      </div>
+
+      <section class="ringkasan" aria-live="polite">
+        <h2>Ringkasan input</h2>
+        <p>Nama: <strong id="rNama">-</strong></p>
+        <p>Email: <strong id="rEmail">-</strong></p>
+        <p>Sesi: <strong id="rSesi">-</strong></p>
+      </section>
+
+      <div class="aksi">
+        <button type="submit" class="utama">Daftar</button>
+        <button type="button" id="tombolReset" class="sekunder">Reset</button>
+      </div>
+    </form>
+
+    <p id="pesanHasil" class="hasil" aria-live="polite"></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="judul">Latihan DOM</h1>
+    <section>
+        <p id="pesan">Belum ada tindakan.</p>
+        <button id="tombolAksi" type="button">Klik Saya</button>
+  </section>
+   <section>
+        <h2>Latihan 3 - Class &amp; Gaya</h2>
+        <p id="teksGaya">Teks ini akan berubah gayanya saat tombol ditekan.</p>
+        <button id="tombolGaya" type="button">Ubah Gaya</button>
+  </section>
+    <section>
+        <h2>Latihan 4-Penghitungan Karakter</h2>
+        <label for="namaInput">Nama:</label>
+        <input type="text" id="namaInput" maxlength="40">
+        <p>Jumlah karakter: <span id="jumlahkarakter">0</span></p>
+    </section>
+    <section>
+        <h2>Latihan 5 - Validasi Form</h2>
+        <form id="formPendaftaran" novalidate>
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+        <label for="usia">Usia</label>
+        <input id="usia" name="usia" type="number" min="17" max="100">
+        <button type="submit">Daftar</button>
+        </form>
+        <p id="pesanForm" aria-live="polite"></p>
+  </section>
+    <section>
+        <h2>Daftar Tugas</h2>
+        <label for="inputTugas">Tugas baru</label>
+        <input id="inputTugas" type="text">
+        <button id="tambahTugas" type="button">Tambahan</button>
+        <p id="pesanTugas" aria-live="polite"></p>
+        <U1 id="daftarTugas"></U1>
+  </section>
+    <section>
+        <h2>Eksperimen - Sembunyikan/Tampilkan</h2>
+        <p id="paragrafToggle">Paragraf ini bisa disembunyikan dan ditampilkan.</p>
+        <button id="tombolToggle" type="button">Sembunyikan / Tampilkan</button>
+    </section>
+ 
+</body>
+</html>
